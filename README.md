@@ -9,6 +9,8 @@
 > Historical sections below preserve earlier project stages and may use terminology superseded by the current evidence index.
 > **Current validation state:** [CURRENT_STATUS.md](CURRENT_STATUS.md)
 > Historical sections below document earlier project stages.
+>
+> **Historical display note:** The preserved [NVIDIA checkpoint README](experiments/linux_nvidia_portability/README.md) contains garbled temperature-unit characters at lines 78 and 147. The historical text is retained unchanged.
 
 
 **Status:** Early proof of concept / experimental  
@@ -141,6 +143,8 @@ This result applies to that specific experiment. It is not treated as universal 
 
 ## Repository Structure
 
+> **Historical layout:** The tree below describes the earlier LE-TCL-001 project stage. See the [Experiment Index](EXPERIMENT_INDEX.md) for the complete RC1 experiment inventory.
+
 Current project organization:
 
 ```text
@@ -202,6 +206,8 @@ Future work may investigate:
 These are development and research directions, not completed capabilities unless separately demonstrated by evidence.
 
 ## Public Release Boundary
+
+> **Historical publication guidance:** The paragraphs below predate the sanitized public derivative. See [Public Provenance](PUBLIC_PROVENANCE.md) for the RC1 publication boundary.
 
 The project should remain private while the implementation and evidence package are still being organized.
 

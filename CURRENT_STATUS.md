@@ -2,6 +2,8 @@
 
 **Little Engine is in controlled experimental validation.**
 
+> **Publication qualifications:** Historical classifications below are preserved. Corresponding Linux/Windows fixture text is identical after line-ending normalization; exact transported bytes are not reconstructable for every original execution (Errata §2). Codex results are reported with incomplete raw-output provenance (Errata §4). Read this summary with [Errata and Evidence Limitations](ERRATA_AND_LIMITATIONS.md) and the [Experiment Index](EXPERIMENT_INDEX.md).
+
 ## Closed Evidence
 
 - **LE-LINUX-CLOSEOUT-001 — CLOSED**
