@@ -1,0 +1,66 @@
+# Little Engine — Git ignore rules
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*.tmp
+*.bak
+~$*
+
+# IDE / editor settings
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Node / web tooling
+node_modules/
+dist/
+build/
+
+# Logs / runtime output
+*.log
+logs/
+tmp/
+temp/
+
+# Secrets / environment files
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Local model/runtime artifacts
+*.gguf
+*.safetensors
+*.bin
+models/
+checkpoints/
+
+# Large ad-hoc datasets outside formal experiment evidence
+data/
+datasets/
+
+# Archive / export files
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+
+# Keep formal experiment evidence under experiments/
+# Raw evidence inside experiments/ is intentionally NOT ignored.

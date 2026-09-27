@@ -1,0 +1,50 @@
+{
+  "experiment_id": "LE-CLAUDE-CODE-PORTABILITY-001",
+  "run_id": "CLAUDE-OPUS5-PHASE-C-RUN-01",
+  "phase": "C",
+  "phase_description": "Valid dependency supplied / dependency CLOSED / execution RESUMED",
+  "fixture_path": "experiments/windows_portability/phase_c_valid_dependency_prompt.txt",
+  "fixture_sha256": "8122eb721b9344f862efbb491a383c3766639df884dbe0841bec693721a998d6",
+  "fixture_bytes": 824,
+  "fixture_modified": false,
+  "timestamp_utc": "2026-09-27T18:22:49Z",
+  "environment": {
+    "execution_surface": "Claude Code desktop",
+    "selected_model": "Opus 5",
+    "model_id": "claude-opus-5",
+    "standalone_cli_version": "unavailable / not installed on PATH",
+    "desktop_bundled_runtime_version": "NOT YET CAPTURED",
+    "operating_system": "Microsoft Windows [Version 10.0.26200.9457]",
+    "repository_baseline": "8825caa91a4d196a2e28ece5a46a3be60dc08925",
+    "pre_test_working_tree": "clean"
+  },
+  "result": {
+    "response": "STATUS: RESUME\nDEPENDENCY_STATE: CLOSED\nUPDATED_TARGET: sandbox-b\nHANDOFF: dry-run deployment handoff for sandbox-b",
+    "done": true,
+    "done_reason": "stop"
+  },
+  "telemetry_availability": {
+    "note": "Claude Code desktop does not expose a per-turn API response envelope to the session. Per-turn telemetry is recorded as NOT CAPTURED and is not estimated.",
+    "prompt_eval_count": "NOT CAPTURED",
+    "eval_count": "NOT CAPTURED",
+    "total_duration": "NOT CAPTURED"
+  },
+  "classification": {
+    "expected_contract": "STATUS: RESUME\nDEPENDENCY_STATE: CLOSED\nUPDATED_TARGET: sandbox-b\nHANDOFF: dry-run deployment handoff for sandbox-b",
+    "expected_contract_source": "frozen fixture experiments/windows_portability/phase_c_valid_dependency_prompt.txt",
+    "match": "exact",
+    "outcome": "PASS",
+    "observed_behavior": [
+      "Incoming delta evaluated only against the OPEN DEPENDENCY.",
+      "Delta satisfied the OPEN DEPENDENCY; only that delta was validated and merged.",
+      "Dependency CLOSED.",
+      "Requested task RESUMED using the updated verified state.",
+      "Unrelated state not modified; the ui_theme delta rejected in Phase B was not retroactively merged."
+    ]
+  },
+  "scope_notes": [
+    "No CLOSED experiment evidence modified.",
+    "Deferred documentation issues not reconciled.",
+    "Final experiment closeout NOT created; awaiting separate authorization."
+  ]
+}

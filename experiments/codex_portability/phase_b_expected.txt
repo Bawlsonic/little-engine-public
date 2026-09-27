@@ -1,0 +1,4 @@
+STATUS: STOP
+DEPENDENCY_STATE: OPEN
+REJECTED_DELTA: ui_theme=dark
+REQUEST: Provide current_approved_deployment_target.

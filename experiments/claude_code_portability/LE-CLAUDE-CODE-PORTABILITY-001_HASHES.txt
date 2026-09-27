@@ -1,0 +1,33 @@
+LE-CLAUDE-CODE-PORTABILITY-001 — EVIDENCE MANIFEST
+
+Algorithm: SHA-256
+Generated (UTC): 2026-09-27T18:25:13Z
+Repository baseline: 8825caa91a4d196a2e28ece5a46a3be60dc08925
+Paths are repository-relative.
+
+## Experiment Evidence Set
+
+2a36bc5593d45d0e1470c59d118ce32fc8d05f4769d0498022522692bed16c9d  experiments/claude_code_portability/LE-CLAUDE-CODE-PORTABILITY-001_BASELINE.md  2872 bytes
+44471c9dbd3e274a87f5ef8df4b0d88da26acfee8a8bdd87138c0574b4c4192b  experiments/claude_code_portability/claude_opus5_phase_a_run01.json  1899 bytes
+f9246c3f9912f1e1f7ead7429f440c9062abd8499a3c672088991021665883dc  experiments/claude_code_portability/claude_opus5_phase_b_run01.json  2355 bytes
+399eba58f7944b6e154043b17f260cb212b287140fcb12d6129ae7725e317c1e  experiments/claude_code_portability/claude_opus5_phase_c_run01.json  2370 bytes
+7573e3e40d45a9e2c0f9484c0a56be72339210aaff8851c3cc32fc15fab63104  experiments/claude_code_portability/README.md  4660 bytes
+3d52dccfc54377b1bdfefe9a99cc32224e9b76ebadb98c034de233333e2b4af0  experiments/claude_code_portability/LE-CLAUDE-CODE-PORTABILITY-001_CLOSEOUT.md  4957 bytes
+
+## Authoritative Source Fixtures (read-only input, not modified)
+
+b63cb06486649ef4e2042fecf112e1c90de34bbdf293c5619bdc67f7c170e86a  experiments/windows_portability/phase_a_prompt.txt  889 bytes
+48da02763dcb9ba8aafa8efd077be7e3ebea386aaf75db54cd4adae2a337111d  experiments/windows_portability/phase_b_irrelevant_prompt.txt  716 bytes
+8122eb721b9344f862efbb491a383c3766639df884dbe0841bec693721a998d6  experiments/windows_portability/phase_c_valid_dependency_prompt.txt  824 bytes
+
+## Notes
+
+This manifest does not contain a hash of itself.
+
+Format note: earlier manifests in this repository were written as UTF-16
+PowerShell Get-FileHash table output with truncated absolute paths. This
+manifest is UTF-8 with full repository-relative paths so that every entry is
+independently verifiable. Earlier manifests were not altered.
+
+Verification command (from repository root):
+  sha256sum -c <(grep -E '^[0-9a-f]{64}  ' experiments/claude_code_portability/LE-CLAUDE-CODE-PORTABILITY-001_HASHES.txt | awk '{print $1"  "$2}')

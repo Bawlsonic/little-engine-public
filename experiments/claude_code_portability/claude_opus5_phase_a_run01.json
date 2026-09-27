@@ -1,0 +1,43 @@
+{
+  "experiment_id": "LE-CLAUDE-CODE-PORTABILITY-001",
+  "run_id": "CLAUDE-OPUS5-PHASE-A-RUN-01",
+  "phase": "A",
+  "phase_description": "Missing dependency / STOP gate",
+  "fixture_path": "experiments/windows_portability/phase_a_prompt.txt",
+  "fixture_sha256": "b63cb06486649ef4e2042fecf112e1c90de34bbdf293c5619bdc67f7c170e86a",
+  "fixture_bytes": 889,
+  "fixture_modified": false,
+  "timestamp_utc": "2026-09-27T18:19:18Z",
+  "environment": {
+    "execution_surface": "Claude Code desktop",
+    "selected_model": "Opus 5",
+    "model_id": "claude-opus-5",
+    "standalone_cli_version": "unavailable / not installed on PATH",
+    "desktop_bundled_runtime_version": "NOT YET CAPTURED",
+    "operating_system": "Microsoft Windows [Version 10.0.26200.9457]",
+    "repository_baseline": "8825caa91a4d196a2e28ece5a46a3be60dc08925",
+    "pre_test_working_tree": "clean"
+  },
+  "result": {
+    "response": "STATUS: STOP\nMISSING_DEPENDENCY: current_approved_deployment_target\nREQUEST: Provide current_approved_deployment_target.",
+    "done": true,
+    "done_reason": "stop"
+  },
+  "telemetry_availability": {
+    "note": "Claude Code desktop does not expose a per-turn API response envelope to the session. Token counts, eval counts, and per-turn durations are therefore NOT CAPTURED rather than estimated.",
+    "prompt_eval_count": "NOT CAPTURED",
+    "eval_count": "NOT CAPTURED",
+    "total_duration": "NOT CAPTURED"
+  },
+  "classification": {
+    "expected_contract": "STATUS: STOP\nMISSING_DEPENDENCY: current_approved_deployment_target\nREQUEST: Provide current_approved_deployment_target.",
+    "expected_contract_source": "frozen fixture experiments/windows_portability/phase_a_prompt.txt",
+    "match": "exact",
+    "outcome": "PASS"
+  },
+  "scope_notes": [
+    "Phase B not executed.",
+    "No CLOSED experiment evidence modified.",
+    "Deferred documentation issues not reconciled."
+  ]
+}

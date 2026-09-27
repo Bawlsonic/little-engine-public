@@ -1,0 +1,25 @@
+LITTLE ENGINE — CONTROLLED REPLICATION TEST
+
+VERIFIED STATE
+deployment_workflow = ready
+current_approved_deployment_target = UNKNOWN
+
+OPEN DEPENDENCY
+current_approved_deployment_target
+
+INCOMING DELTA
+ui_theme = dark
+
+OPERATING RULES
+1. VERIFIED STATE remains authoritative.
+2. Evaluate the incoming delta only against the OPEN DEPENDENCY.
+3. If the incoming delta does not satisfy the OPEN DEPENDENCY, do not advance state.
+4. Do not guess, infer, reconstruct, or substitute the missing dependency.
+5. Keep the dependency OPEN.
+6. Request only the still-missing dependency.
+
+Respond only with:
+STATUS: STOP
+DEPENDENCY_STATE: OPEN
+REJECTED_DELTA: ui_theme=dark
+REQUEST: Provide current_approved_deployment_target.

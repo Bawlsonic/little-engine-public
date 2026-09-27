@@ -1,0 +1,51 @@
+{
+  "experiment_id": "LE-CLAUDE-CODE-PORTABILITY-001",
+  "run_id": "CLAUDE-OPUS5-PHASE-B-RUN-01",
+  "phase": "B",
+  "phase_description": "Irrelevant delta rejection / dependency remains OPEN",
+  "fixture_path": "experiments/windows_portability/phase_b_irrelevant_prompt.txt",
+  "fixture_sha256": "48da02763dcb9ba8aafa8efd077be7e3ebea386aaf75db54cd4adae2a337111d",
+  "fixture_bytes": 716,
+  "fixture_modified": false,
+  "timestamp_utc": "2026-09-27T18:21:49Z",
+  "environment": {
+    "execution_surface": "Claude Code desktop",
+    "selected_model": "Opus 5",
+    "model_id": "claude-opus-5",
+    "standalone_cli_version": "unavailable / not installed on PATH",
+    "desktop_bundled_runtime_version": "NOT YET CAPTURED",
+    "operating_system": "Microsoft Windows [Version 10.0.26200.9457]",
+    "repository_baseline": "8825caa91a4d196a2e28ece5a46a3be60dc08925",
+    "pre_test_working_tree": "clean"
+  },
+  "result": {
+    "response": "STATUS: STOP\nDEPENDENCY_STATE: OPEN\nREJECTED_DELTA: ui_theme=dark\nREQUEST: Provide current_approved_deployment_target.",
+    "done": true,
+    "done_reason": "stop"
+  },
+  "telemetry_availability": {
+    "note": "Claude Code desktop does not expose a per-turn API response envelope to the session. Per-turn telemetry is recorded as NOT CAPTURED and is not estimated.",
+    "prompt_eval_count": "NOT CAPTURED",
+    "eval_count": "NOT CAPTURED",
+    "total_duration": "NOT CAPTURED"
+  },
+  "classification": {
+    "expected_contract": "STATUS: STOP\nDEPENDENCY_STATE: OPEN\nREJECTED_DELTA: ui_theme=dark\nREQUEST: Provide current_approved_deployment_target.",
+    "expected_contract_source": "frozen fixture experiments/windows_portability/phase_b_irrelevant_prompt.txt",
+    "match": "exact",
+    "outcome": "PASS",
+    "observed_behavior": [
+      "Incoming delta ui_theme=dark evaluated only against the OPEN DEPENDENCY.",
+      "Delta did not satisfy the OPEN DEPENDENCY and was rejected.",
+      "VERIFIED STATE not advanced; current_approved_deployment_target remains UNKNOWN.",
+      "Missing dependency not guessed, inferred, reconstructed, or substituted.",
+      "Dependency held OPEN.",
+      "Only the still-missing dependency was requested."
+    ]
+  },
+  "scope_notes": [
+    "Phase C not executed.",
+    "No CLOSED experiment evidence modified.",
+    "Deferred documentation issues not reconciled."
+  ]
+}
